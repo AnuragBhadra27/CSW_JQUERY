@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<head>
+<title>jQuery Dom</title>
+<script src ="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+$("#b1").click(function(){
+	alert("innerHTML= "+n.innerHTML);
+});
+ 
+});
+
+</script>
+</head>
+<body>
+<a id="n" href="file:///C:/Users/CL402-14/Downloads/Full%20Stack%20Java%20Development%20with%20Spring%20MVC,%20Hibernate,%20jQuery,%20and%20Bootstrap.pdf">Mayur ramgir <b> Author </b></a><br>
+
+<button id ="b1">Inner HTML Property</button>
+</body>
+</html>

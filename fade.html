@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<head>
+<title>jQuery fadding </title>
+<script src ="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+
+$("#btn3").click(function(){
+  $("#d1").fadeIn();
+  $("#d2").fadeIn("slow");
+  $("#d3").fadeIn(3000);
+});
+
+$("#btn4").dblclick(function(){
+  $("#d1").fadeTo(2000,0.2);
+  $("#d2").fadeOut(2000,0.2);
+  $("#d3").fadeOut(2000,0.2);
+});
+
+ });
+ 
+</script>
+</head>
+<body>
+<div id="d1" style="width:70px;height:70px;display:none;background-color:yellow"></div>
+<div id="d2" style="width:70px;height:70px;display:none;background-color:red"></div>
+<div id="d3" style="width:70px;height:70px;display:none;background-color:green"></div>
+
+
+<button id="btn3">Fade In </button>
+<button id="btn4">Fade To </button>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animation Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #animatedDiv {
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 1em;
+            transition: all 0.5s ease; /* For smooth transitions */
+        }
+    </style>
+</head>
+<body>
+
+<div id="animatedDiv">Animate Me!</div>
+<button id="animateButton">Start Animation</button>
+
+<script>
+    $(document).ready(function() {
+        $('#animateButton').click(function() {
+            $('#animatedDiv')
+                .animate({ opacity: 0.3, height: '50px' }, 1000) // Slow speed
+                .animate({ width: '300px', opacity: 0.7 }, 500) // Fast speed
+                .animate({ height: '50px', opacity: 0.3 }, 1000) // Slow speed
+                .animate({ width: '300px', opacity: 0.7 }, 500) // Fast speed
+                .animate({ fontSize: '2em' }, 1000); // Slow speed
+        });
+    });
+</script>
+
+</body>
+</html>

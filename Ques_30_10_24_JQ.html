@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<head>
+<title>jQuery Ques </title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){ 
+   $(".key").mouseenter(function(){
+	$(".key").css("background-color","yellow").css("color","blue").css("font-size","2em");
+	  
+	});
+  $(".key").mouseleave(function(){
+	$(".key").css("background-color","pink").css("color","green").css("font-size","1em");
+	  
+	});
+
+
+      });
+
+</script>
+</head>
+<body>
+<h1 class="key"> Hello All !!!</h1>
+<h2 class="key"> Hello All !!!</h2>
+<p class="key"> Hello All !!!</p> 
+<p class="key"> Hello All !!!</p>
+</body>
+</html>

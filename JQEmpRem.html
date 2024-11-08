@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<head>
+<title>jQuery Addition of Element </title>
+<script src ="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+$("#b1").click(function(){
+$("#d").remove();
+});
+
+$("#b2").click(function(){
+$("#d").empty();
+});
+ 
+});
+
+</script>
+<style>
+#d{
+height:500px;
+width:500px;
+border:3px solid green;
+background-color:orange;
+
+}
+</style>
+</head>
+<body>
+
+<div id="d">
+we are using div element
+<p class="par"> 1st paragraph </p>
+<p class="par"> 2nd paragraph </p>
+<p> 3rd paragraph  </p>
+</div>
+
+<button id="b1"> Remove </button>
+<button id ="b2"> Empty </button>
+
+</body>
+</html>

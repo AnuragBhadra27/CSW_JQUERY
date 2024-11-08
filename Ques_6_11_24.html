@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<head>
+<title>jQuery Addition of Element </title>
+<script src ="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+$("#b1").click(function(){
+$("#d").remove();
+});
+
+$("#b2").click(function(){
+$("#d").empty();
+});
+ 
+});
+
+</script>
+</head>
+<body>
+
+<div>
+
+<p class="p1"> 1st paragraph </p>
+<p class="p2"> 2nd paragraph </p>
+<p class="p3"> 3rd paragraph  </p>
+
+</div>
+
+<button id="b1"> Remove </button>
+<input type="text" id="tbox" name="enterID to delete ">
+
+</body>
+</html> 

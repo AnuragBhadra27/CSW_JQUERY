@@ -1,0 +1,39 @@
+<!-- Q.Create an Html page with JQuery that animate a div element when a button is clicked .The animation sequence should involve the following steps: -->
+
+<!-- 1st Animate the div to reduce its opacity to 0.3 & and set height to 50px at a slow speed next,increase the width of the div 300px while adjusting it's 0.7 at a fast speed. Repeat these height and opacity adjustments once more-height to 50 px with 0.3 at and width to 300px with opacity 0.7 at speed slow speed.Finally,increse the font size any text within the div to 2em at slow speed The div should initialy have a orange color , be sized at 50px, and positioned absolutely.include a button that triggers this full animation sequence on click -->
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <style>
+            #btn1{
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 2em;
+            transition: all 0.5s ease;
+            }
+        </style>
+        <title>Animation</title>
+        <script src ="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       
+    </head>
+    <body>
+        <div id="btn1">Animate Me!</div>
+        <button id="antbtn"> Start Animation </button>
+        <script>
+            $(document).ready(function(){
+                $("#antbtn").click(function(){
+                    $("#btn1")
+                    .animate({opacity: 0.3 ,height:'50px'},slow)
+                    .animate({width:'300px' ,opacity: 0.7 ,},fast)
+                    .animate({height:'50px' ,opacity: 0.3 ,},slow)
+                    .animate({width: '300px', opacity: 0.7 ,},fast)
+                    .animate({fontsize:'2em'},slow)
+                });
+            });
+        </script>
+    </body>
+ </html>

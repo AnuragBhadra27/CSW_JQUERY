@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<head>
+<title>jQuery effect </title>
+<script src ="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+
+ 
+ $("btn1").click(function(){
+  $(".key").css("color","blue").slideUp(2000);
+    });
+
+ $("btn2").click(function(){
+  $(".key").css("color","blue").slideDown(3000);
+    });
+
+ $("btn3").click(function(){
+  $(".key").css("color","blue").slideToggle(5000);
+    });
+
+
+ });
+
+
+</script>
+</head>
+<body>
+<h1 class="key"> Hello All !!!</h1>
+<h2 class="key"> Hello All !!!</h2>
+<p class="key"> Hello All !!!</p> 
+<p class="key"> Hello All !!!</p>
+
+<button id="btn1">Slide up</button>
+<button id="btn2">Slide down</button>
+<button id="btn3">Slide Toggle</button>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JQ Dom2</title>
+<script src ="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+
+$("#b1").click(function(){
+alert("Text :"+$("#par").text());
+});
+
+$("#b2").click(function(){
+alert("Text :"+$("#par").html());
+});
+
+$("#b3").click(function(){
+alert("Text :"+$("#sname").val());
+});
+
+$("#b4").click(function(){
+$("#par").text("Hi User");
+});
+
+$("#b5").click(function(){
+$("#par").html(" <b> Hi User ");
+});
+
+$("#b6").click(function(){
+$("#sname").val("Anurag ");
+});
+
+
+ 
+});
+
+</script>
+</head>
+<body>
+<p id="par"> This is a paragraph<b> Contains bold test </b></p>
+<p><label for ="sname"> Student Name : </lable></p>
+<input type="text" id="sname" name="std" value="Mayur">
+
+<button id ="b1">Dis Text</button>
+<button id ="b2">Dis Html</button>
+<button id ="b3">Node name </button>
+
+<button id ="b4">Set Text</button>
+<button id ="b5">Set Html</button>
+<button id ="b6">Set Value </button>
+
+
+</body>
+</html>
